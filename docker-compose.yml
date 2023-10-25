@@ -1,12 +1,12 @@
 version: '3'
 services:
   expresscart:
-    image: "node:8"
+    image: "node:14"
     build: .
     container_name: "expresscart"
     environment:
       NODE_ENV: development
-      NODE_PATH: /
+      NODE_PATH: / 
     ports:
       - "1111:1111"
     links:
