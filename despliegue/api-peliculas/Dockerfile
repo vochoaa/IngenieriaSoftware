@@ -12,10 +12,10 @@ ENV FLASK_ENV="development"
 ENV APP_SETTINGS_MODULE="config.default"
 ENV PORT 5000
 
-RUN flask db init
-RUN flask db revision --rev-id 48905bb2f82d
-RUN flask db migrate
-RUN flask db upgrade
+#RUN flask db init
+#RUN flask db revision --rev-id 48905bb2f82d
+#RUN flask db migrate
+#RUN flask db upgrade
 
 EXPOSE ${port}
 CMD [ "flask","run","--host","0.0.0.0" ]
